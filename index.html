@@ -12,33 +12,43 @@
 <body>
 
     <main>
-        <aside>
-            <ul class="links">
-                <li onclick="Navigate(0)" class="activeLink"><i class="fa-solid fa-house"></i>
+        <aside class="navigation">
+            <ul class="navigation__list">
+                <li class="navigation__list-link active" onclick="Navigate(0)"><i class="fa-solid fa-house"></i>
                     <p>Home</p>
                 </li>
-                <li onclick="Navigate(1)"><i class="fa-solid fa-user"></i>
+                <li class="navigation__list-link" onclick="Navigate(1)"><i class="fa-solid fa-user"></i>
                     <p>About Me</p>
                 </li>
-                <li onclick="Navigate(2)"><i class="fa-solid fa-list"></i>
+                <li class="navigation__list-link" onclick="Navigate(2)"><i class="fa-solid fa-list"></i>
                     <p>Services</p>
                 </li>
-                <li onclick="Navigate(3)"><i class="fa-solid fa-images"></i>
+                <li class="navigation__list-link" onclick="Navigate(3)"><i class="fa-solid fa-images"></i>
                     <p>Gallery</p>
                 </li>
-                <li onclick="Navigate(4)"><i class="fa-solid fa-comments"></i>
+                <li class="navigation__list-link" onclick="Navigate(4)"><i class="fa-solid fa-comments"></i>
                     <p>Contact Me</p>
                 </li>
             </ul>
+
         </aside>
         <div class="swiper mySwiper">
             <div class="SlideContainer swiper-wrapper">
                 <div class="swiper-slide home-slide">
                     <div class="HomeContent">
-                        <h1>Hi! I'm <span class="stylized-name">Muzammal</span>,</h1>
-                        <h2>A <span class="proffesions">Web Developer</span></h2>
-                        <p class="heroline">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad officia iste
-                            tenetur dolor quis officiis quidem sapiente illo nostrum mollitia.</p>
+                        <h1>Hi! I'm <span class="stylized-name">Tatiana</span>,</h1>
+                        <h2>Who <span class="proffesions">I am:</span></h2>
+                        <p class="heroline">
+                            Web Developer: Passionate about creating intuitive and dynamic web experiences.
+                        </p>
+                        <p class="heroline">
+                            Tech Enthusiast: Always exploring the latest technologies and trends in web development.
+                        </p>
+                        <p class="heroline">
+                            Problem Solver: Enjoy turning complex challenges into simple, efficient solutions.
+                        </p>
+
+
                         <div class="buttonGroup"><button>Hire Me</button><button>Contact Me</button></div>
                     </div>
                     <div class="SideImg">
@@ -46,20 +56,20 @@
                             <hr class="hr1">
                             <hr class="hr2">
                         </div>
-                        <img src="https://picsum.photos/id/237/200/200" alt="">
+                        <img src="images/myPhoto.jpg" alt="">
                         <div class="bottom-left-corner">
                             <hr class="hr1">
                             <hr class="hr2">
                         </div>
                     </div>
-                    <p class="slide-help">Scroll for next slide <i class="fa-solid fa-chevron-right fa-shake"></i>
+                    <!--<p class="slide-help">Scroll for next slide <i class="fa-solid fa-chevron-right fa-shake"></i>
                     </p>
                 </div>
                 <div class="swiper-slide">
                     <div class="about-us">
                         <h1 class="heading">About Me</h1>
-                        <h3 class="sub-heading">I'm Muzammal, <span class="proffesions">A Web Developer</span></h3>
-                        <p class="aboutme-deatils">
+                        <h3 class="sub-heading">I'm Tatiana, <span class="proffesions">A Web Developer</span></h3>
+                        <p class="aboutme-details">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit iure, iste debitis unde
                             maiores earum, ipsam quaerat quo magni sunt nisi at ullam nostrum pariatur soluta mollitia
                             omnis consectetur qui similique doloribus vitae sit est in modi. Officia libero, animi
@@ -153,26 +163,26 @@
                 </div>
                 <div class="swiper-slide gallery">
                     <h1 class="heading">Gallery</h1>
-                    <div class="project"><img src="https://picsum.photos/200/300?random=1" alt=""></div>
-                    <div class="project"><img src="https://picsum.photos/200/300?random=2" alt=""></div>
-                    <div class="project"><img src="https://picsum.photos/200/300?random=3" alt=""></div>
-                    <div class="project"><img src="https://picsum.photos/200/300?random=4" alt=""></div>
-                    <div class="project"><img src="https://picsum.photos/200/300?random=5" alt=""></div>
-                    <div class="project"><img src="https://picsum.photos/200/300?random=6" alt=""></div>
+                    <div class="project"><img src="images/card-1.jpg" alt=""></div>
+                    <div class="project"><img src="images/card-2.jpg" alt=""></div>
+                    <div class="project"><img src="images/card-3.jpg" alt=""></div>
+                    <div class="project"><img src="images/card-4.jpg" alt=""></div>
+                    <div class="project"><img src="images/card-5.jpg" alt=""></div>
+                    <div class="project"><img src="images/card-6.jpg" alt=""></div>
                 </div>
                 <div class="swiper-slide contactMe">
                     <h1 class="heading">Contact Me</h1>
                     <div class="contactinfo"><i class="fa-solid fa-phone"></i>
                         <h3>Mobile No</h3>
-                        <p>123-456-7890</p>
+                        <p>332-200-XXXX</p>
                     </div>
                     <div class="contactinfo"><i class="fa-solid fa-location-dot"></i>
                         <h3>Location</h3>
-                        <p>Somewhere On Earth</p>
+                        <p>Brooklyn, New York</p>
                     </div>
                     <div class="contactinfo"><i class="fa-regular fa-envelope"></i>
                         <h3>Email</h3>
-                        <p>abc123@gmail.com</p>
+                        <p>tatianaosipova.it@gmail.com</p>
                     </div>
                     <div class="contactinfo"><i class="fa-solid fa-globe"></i>
                         <h3>Website</h3>
@@ -194,13 +204,14 @@
 
                     </form>
                     <footer>
-                        <li>Copyright © 2023 Muzammal.</li>
+                        <li>Copyright © 2024 Tatiana Osipova</li>
                     </footer>
                 </div>
             </div>
-        </div>
+        </div> -->
     </main>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
 
 
