@@ -195,7 +195,6 @@ main {
     width: 10px;
     height: 120px;
     border-bottom-left-radius: 3px;
-
     background: #80ed99;
     border: none;
     border-bottom-right-radius: 3px;
@@ -220,45 +219,39 @@ main {
     height: 100%;
 }
 
-.about-us {
+.about {
     width: 100%;
     height: 100%;
     padding: 100px;
     color: white;
 }
 
-.heading {
+.about-title {
     padding: 20px 10px;
     font-size: 40px;
     color: #80ed99;
 }
 
-.about-us h3 {
-    padding: 10px;
-
-}
-
-.aboutme-deatils {
+.about-details {
+    display: flex;
+    gap: 200px;
     padding: 20px;
     font-weight: 300;
 }
 
-.about-me-divison {
-    display: flex;
+.about-table__title{
+    color: #80ed99;
+    font-size: 24px;
 }
 
-.about-me-table {
-    width: 60%;
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-}
 
-.about-me-table li {
-    padding: 20px;
+
+.about-table li {
+    padding: 10px;
     position: relative;
 }
 
-.about-me-table li::after {
+.about-table li::after {
     position: absolute;
     width: 100%;
     left: 0px;
@@ -268,24 +261,25 @@ main {
     bottom: 0px;
 }
 
-.about-me-table span {
+.about-table span {
     color: #80ed99;
     font-weight: bold;
     margin-right: 5px;
 }
 
-.about-me-table .buttonGroup {
+/* .about-me-table .buttonGroup {
     grid-column: 1/span 2;
     justify-content: center;
     padding: 50px;
     flex: 1;
-}
+} */
 
 .skill-bar {
     width: calc(40% - 20px);
 }
 
 .skill-bar li {
+    list-style: none;
     width: 100%;
     padding: 10px;
 }
@@ -370,19 +364,15 @@ main {
     grid-template-rows: 100px calc(50% - 50px) calc(50% - 50px);
 }
 
-.gallery h1,
-.gallery h2 {
+.gallery-title {
+    padding: 20px 10px;
+    font-size: 40px;
+    color: #80ed99;
     grid-column: 1/span 3;
 }
 
-.gallery h2 {
-    color: white;
-    font-weight: 600;
-    font-size: 24px;
-    padding: 20px 10px;
-}
 
-.gallery .project {
+.gallery .gallery__item {
     margin: 25px 20px;
     margin-top: 0px;
     background: #212529;
@@ -390,7 +380,7 @@ main {
     border-radius: 20px;
 }
 
-.gallery .project img {
+.gallery .gallery__item img {
     width: 100%;
     height: 100%;
     border-radius: 10px;
