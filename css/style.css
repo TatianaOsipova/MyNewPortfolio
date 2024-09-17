@@ -397,7 +397,7 @@ main {
     grid-area: 2/2/ span 5/span 2;
 }
 
-.contactinfo {
+.contact__info {
     display: flex;
     flex-direction: column;
     padding: 10px;
@@ -407,14 +407,14 @@ main {
     align-items: center;
 }
 
-.contactinfo i {
+.contact__info i {
     padding: 10px;
     font-size: 40px;
     color: #80ed99;
     margin: 20px auto;
 }
 
-.contactinfo h3 {
+.contact-me__subtitle {
     color: #80ed99;
 }
 
@@ -427,7 +427,7 @@ main {
     color: white;
 }
 
-.contact-me form h2 {
+.form__title {
     grid-column: 1/span 2;
     padding: 20px;
     display: flex;
@@ -441,18 +441,15 @@ main {
     border: none;
     color: white;
     background-color: #212529;
-
 }
 
 .contact-me form input:focus {
     border: 1px solid #85f69f;
     outline: none;
-
 }
 
 .contact-me form textarea {
     width: calc(100% - 40px);
-
     grid-column: 1/span 2;
     margin: 20px;
     padding: 20px;
@@ -472,10 +469,9 @@ main {
 .contact-me button {
     grid-column: 1/span 2;
     margin: 20px auto;
-
 }
 
-form h2 .SocialLinks {
+form h2 .social-links {
     padding: 5px;
     width: fit-content;
     margin-left: auto;
@@ -484,13 +480,13 @@ form h2 .SocialLinks {
     border-radius: 30px;
 }
 
-form h2 .SocialLinks i {
+form h2 .social-links i {
     padding: 10px;
     border-radius: 50%;
     transition-duration: 0.25s;
 }
 
-form h2 .SocialLinks i:hover {
+form h2 .social-links i:hover {
     background-color: #176d2d;
 }
 
