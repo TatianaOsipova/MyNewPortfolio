@@ -411,11 +411,12 @@ main {
     padding: 10px;
     font-size: 40px;
     color: #80ed99;
-    margin: 20px auto;
+    /* margin: 20px auto; */
 }
 
 .contact-me__subtitle {
     color: #80ed99;
+    padding: 10px;
 }
 
 .contact-me form {
@@ -506,5 +507,5 @@ form h2 .social-links i:hover {
 }
 
 .copyright{
-    padding: 10px;
+    padding: 20px;
 }
