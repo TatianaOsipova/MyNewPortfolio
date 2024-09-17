@@ -239,7 +239,7 @@ main {
     font-weight: 300;
 }
 
-.about-table__title{
+.about-table__title {
     color: #80ed99;
     font-size: 24px;
 }
@@ -314,19 +314,14 @@ main {
     box-sizing: border-box;
 }
 
-.services-title{
+.services-title {
     padding: 20px 10px;
     font-size: 40px;
     color: #80ed99;
     grid-column: 1/span 3;
-
 }
 
-/* .services .heading {
-    grid-column: 1/span 3;
-} */
-
-.services .service {
+.service {
     display: flex;
     text-align: center;
     justify-content: center;
@@ -336,33 +331,21 @@ main {
     margin: 20px;
     backdrop-filter: blur(10px);
     flex-direction: column;
-
     transition-duration: 0.25s;
 }
 
-.services .service i {
-    font-size: 48px;
-    color: #80ed99
-}
-
-.services .service .service-icon {
-    padding: 0px 50px;
-    border-radius: 5px;
-    margin: 20px auto;
-}
-
-.service h2 {
-    color: #80ed99
+.service-subtitle {
+    color: #80ed99;
+    padding-bottom: 25px;
 }
 
 .service:hover {
     background-color: #80ed99;
-    color: #176d2d
+    color: #062d0f;
 }
 
-.service:hover h2,
-.service:hover i {
-    color: #176d2d
+.service:hover h2 {
+    color: #062d0f;
 }
 
 .gallery {
@@ -378,7 +361,6 @@ main {
     color: #80ed99;
     grid-column: 1/span 3;
 }
-
 
 .gallery .gallery__item {
     margin: 25px 20px;
@@ -396,7 +378,7 @@ main {
     border: none;
 }
 
-.contactMe {
+.contact-me {
     display: grid;
     grid-template-columns: 20% 80%;
     grid-template-rows: 80px calc(25% - 20px) calc(25% - 20px) calc(25% - 20px) calc(25% - 20px);
@@ -404,13 +386,14 @@ main {
     padding: 100px;
 }
 
-.contactMe h1 {
+.contact-me__title {
     grid-column: 1/span 3;
     font-size: 40px;
     padding: 30px;
+    color: #80ed99;
 }
 
-.contactMe form {
+.contact-me form {
     grid-area: 2/2/ span 5/span 2;
 }
 
@@ -435,7 +418,7 @@ main {
     color: #80ed99;
 }
 
-.contactMe form {
+.contact-me form {
     display: grid;
     grid-template-columns: 50% 50%;
     width: 100%;
@@ -444,13 +427,13 @@ main {
     color: white;
 }
 
-.contactMe form h2 {
+.contact-me form h2 {
     grid-column: 1/span 2;
     padding: 20px;
     display: flex;
 }
 
-.contactMe form input {
+.contact-me form input {
     padding: 15px;
     border-radius: 10px;
     margin: 20px;
@@ -461,13 +444,13 @@ main {
 
 }
 
-.contactMe form input:focus {
+.contact-me form input:focus {
     border: 1px solid #85f69f;
     outline: none;
 
 }
 
-.contactMe form textarea {
+.contact-me form textarea {
     width: calc(100% - 40px);
 
     grid-column: 1/span 2;
@@ -482,29 +465,14 @@ main {
     background-color: #212529;
 }
 
-.contactMe form textarea:focus {
+.contact-me form textarea:focus {
     border: 1px solid #85f69f !important;
 }
 
-.contactMe button {
+.contact-me button {
     grid-column: 1/span 2;
     margin: 20px auto;
 
-}
-
-footer {
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
-    text-align: center;
-    color: white;
-    width: 100%;
-    font-weight: 200;
-    font-size: 0.8rem;
-}
-
-footer li {
-    padding: 10px;
 }
 
 form h2 .SocialLinks {
@@ -528,4 +496,19 @@ form h2 .SocialLinks i:hover {
 
 .about-us {
     overflow: auto;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    text-align: center;
+    color: white;
+    width: 100%;
+    font-weight: 200;
+    font-size: 0.8rem;
+}
+
+.copyright{
+    padding: 10px;
 }
