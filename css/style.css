@@ -314,9 +314,17 @@ main {
     box-sizing: border-box;
 }
 
-.services .heading {
+.services-title{
+    padding: 20px 10px;
+    font-size: 40px;
+    color: #80ed99;
     grid-column: 1/span 3;
+
 }
+
+/* .services .heading {
+    grid-column: 1/span 3;
+} */
 
 .services .service {
     display: flex;
