@@ -18,6 +18,10 @@ main {
     font-style: normal;
 }
 
+ul{
+    list-style: none;
+}
+
 .navigation {
     width: 280px;
     display: flex;
@@ -380,7 +384,7 @@ main {
 
 .contact-me {
     display: grid;
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 20% 20% 60%;
     grid-template-rows: 80px calc(25% - 20px) calc(25% - 20px) calc(25% - 20px) calc(25% - 20px);
     position: relative;
     padding: 100px;
@@ -411,7 +415,6 @@ main {
     padding: 10px;
     font-size: 40px;
     color: #80ed99;
-    /* margin: 20px auto; */
 }
 
 .contact-me__subtitle {
@@ -506,6 +509,27 @@ form h2 .social-links i:hover {
     font-size: 0.8rem;
 }
 
+.footer__social-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__social-item{
+    margin-right: 10px;
+    padding-left: 20px;
+}
+
+.footer__social-item svg path {
+    transition: all .3s;
+}
+
+.footer__social-item svg:hover path {
+    fill: #176d2d;
+}
+
 .copyright{
     padding: 20px;
+    align-items: center;
+    text-align: center;
 }
