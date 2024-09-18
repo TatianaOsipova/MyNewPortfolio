@@ -516,7 +516,7 @@ form h2 .social-links i:hover {
 }
 
 .footer__social-item{
-    margin-right: 10px;
+    margin-right: 15px;
     padding-left: 20px;
 }
 
@@ -532,4 +532,5 @@ form h2 .social-links i:hover {
     padding: 20px;
     align-items: center;
     text-align: center;
+    font-variant-numeric: normal;
 }
